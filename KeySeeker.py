@@ -61,7 +61,7 @@ while True:
         search_for_the_key(folder, key)
 
     else:
-        option_menu = input("-"*50 + "\nSelect: \n1 - Change Folder\n2 - Change Key\n3 - Quit\n-->  ")
+        option_menu = input("-"*50 + "\nSelect: \n1 - Change Folder\n2 - Change Key\n3 - Change both\n4 - Quit\n-->  ")
         match option_menu:
             case "1":
                 folder = input("Enter the path of the folder:")
@@ -70,4 +70,8 @@ while True:
                 key = input("Enter the key you want to search for: ")
                 search_for_the_key(folder, key)
             case "3":
+                folder = input("Enter the path of the folder:")
+                key = input("Enter the key you want to search for: ")
+                search_for_the_key(folder, key)
+            case "4":
                 break
